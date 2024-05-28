@@ -1,0 +1,45 @@
+{
+    "latex-workshop.intellisense.package.extra": [
+        "fontspec",
+    ],
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/output",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk (xelatex)",
+            "tools": [
+                "xelatexmkT",
+                "xelatexmkS"
+            ]
+        },
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatexmkT",
+            "command": "latexmk",
+            "args": [
+                // "-synctex=1",
+                // "-interaction=nonstopmode",
+                // "-file-line-error",
+                "-xelatex",
+                "-auxdir=%OUTDIR%/tmp",
+                "-outdir=%OUTDIR%/release",
+                "%WORKSPACE_FOLDER%/src/mainT.tex"
+            ],
+            "env": {}
+        },
+        {
+            "name": "xelatexmkS",
+            "command": "latexmk",
+            "args": [
+                "-xelatex",
+                "-auxdir=%OUTDIR%/tmp",
+                "-outdir=%OUTDIR%/release",
+                "%WORKSPACE_FOLDER%/src/mainS.tex"
+            ],
+            "env": {}
+        }
+    ],
+    "latex-workshop.view.pdf.trim": 2,
+    "latex-workshop.view.pdf.zoom": "page-width",
+}
