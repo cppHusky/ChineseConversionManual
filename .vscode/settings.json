@@ -1,7 +1,7 @@
 {
-    "latex-workshop.intellisense.package.extra": [
-        "fontspec",
-    ],
+    "latex-workshop.intellisense.command.user": {
+        "content{}{}":"content{${1:arg1}}{${2:arg2}}"
+    },
     "latex-workshop.latex.autoBuild.run": "never",
     "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/output",
     "latex-workshop.latex.recipes": [
@@ -19,7 +19,7 @@
             "command": "latexmk",
             "args": [
                 // "-synctex=1",
-                // "-interaction=nonstopmode",
+                "-interaction=nonstopmode",
                 // "-file-line-error",
                 "-xelatex",
                 "-auxdir=%OUTDIR%/tmp",
@@ -32,6 +32,7 @@
             "name": "xelatexmkS",
             "command": "latexmk",
             "args": [
+                "-interaction=nonstopmode",
                 "-xelatex",
                 "-auxdir=%OUTDIR%/tmp",
                 "-outdir=%OUTDIR%/release",
@@ -40,6 +41,6 @@
             "env": {}
         }
     ],
-    "latex-workshop.view.pdf.trim": 2,
+    "latex-workshop.view.pdf.trim": 1,
     "latex-workshop.view.pdf.zoom": "page-width",
 }
