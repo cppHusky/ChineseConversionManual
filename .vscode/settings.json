@@ -3,11 +3,12 @@
         "content{}{}":"content{${1}}{${2}}"
     },
     "latex-workshop.intellisense.package.extra": [
-        "fontspec",
         "fancyhdr",
+        "fontspec",
+        "multirow",
         "tcolorbox",
         "wrapfig",
-        "xpinyin"
+        "xpinyin",
     ],
     "latex-workshop.latex.autoBuild.run": "never",
     "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/output",
