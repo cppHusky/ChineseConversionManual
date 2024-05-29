@@ -1,7 +1,14 @@
 {
     "latex-workshop.intellisense.command.user": {
-        "content{}{}":"content{${1:arg1}}{${2:arg2}}"
+        "content{}{}":"content{${1}}{${2}}"
     },
+    "latex-workshop.intellisense.package.extra": [
+        "fontspec",
+        "fancyhdr",
+        "tcolorbox",
+        "wrapfig",
+        "xpinyin"
+    ],
     "latex-workshop.latex.autoBuild.run": "never",
     "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/output",
     "latex-workshop.latex.recipes": [

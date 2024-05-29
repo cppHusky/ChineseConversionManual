@@ -5,6 +5,8 @@
 \usepackage{tcolorbox}
 \usepackage{geometry}
 \usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{xpinyin}
 \usepackage{ifthen}
 \setmainfont{Noto Serif}
 \setsansfont{Noto Sans}
@@ -32,3 +34,8 @@
 }
 \newboolean{TraditionalChinese}
 \newcommand{\content}[2]{\ifbool{TraditionalChinese}{#1}{#2}}
+\graphicspath{
+    {../figures/knowledge}
+    {../figures/simplified characters}
+    {../traditional characters}
+}
