@@ -9,6 +9,8 @@
         "tcolorbox",
         "wrapfig",
         "xpinyin",
+        "hyperref",
+        "cleveref",
     ],
     "latex-workshop.latex.autoBuild.run": "never",
     "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/output",

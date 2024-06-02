@@ -1,0 +1,20 @@
+\ProvidesPackage{presetS}
+\usepackage{preset}
+\newcommand{\globalpreset}{
+    \setboolean{TraditionalChinese}{false}
+    \setCJKmainfont{Noto Serif CJK SC}
+    \setCJKsansfont{Noto Sans CJK SC}
+    \renewcommand{\contentsname}{目次}
+    \crefname{table}{表}{表}
+    \crefname{figure}{图}{图}
+    \crefname{appendix}{附录}{附录}
+}
+\newcommand{\frontmatterpreset}{
+    
+}
+\newcommand{\mainmatterpreset}{
+
+}
+\newcommand{\appendixpreset}{
+    \crefname{chapter}{附录}{附录}
+}
