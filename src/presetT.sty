@@ -2,7 +2,10 @@
 \usepackage{preset}
 \newcommand{\globalpreset}{
     \setboolean{TraditionalChinese}{true}
-    \setCJKmainfont{Noto Serif CJK TC}
+    \setCJKmainfont{Noto Serif CJK TC}[
+        BoldFont=Noto Serif CJK TC Bold,
+        ItalicFont=全字庫正楷體
+    ]
     \setCJKsansfont{Noto Sans CJK TC}
     \renewcommand{\contentsname}{目次}
     \crefformat{chapter}{##2第~##1~章##3}
