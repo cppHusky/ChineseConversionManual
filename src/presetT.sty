@@ -5,11 +5,11 @@
     \setCJKmainfont{Noto Serif CJK TC}
     \setCJKsansfont{Noto Sans CJK TC}
     \renewcommand{\contentsname}{目次}
-    \renewcommand{\figurename}{圖}
-    \renewcommand{\appendixname}{附錄}
-    \crefname{table}{表}{表}
-    \crefname{figure}{圖}{圖}
-    \crefname{appendix}{附錄}{附錄}
+    \crefformat{chapter}{##2第~##1~章##3}
+    \crefformat{appendix}{##2附錄~##1##3\ }
+    \crefformat{section}{##2第##1節##3}
+    \crefformat{table}{##2表~##1##3\ }
+    \crefformat{figure}{##2圖~##1##3\ }
 }
 \newcommand{\frontmatterpreset}{
     

@@ -12,6 +12,7 @@
         "hyperref",
         "cleveref",
     ],
+    "latex-workshop.latex.recipe.default": "first",
     "latex-workshop.latex.autoBuild.run": "never",
     "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/output",
     "latex-workshop.latex.recipes": [
@@ -28,9 +29,9 @@
             "name": "xelatexmkT",
             "command": "latexmk",
             "args": [
-                // "-synctex=1",
+                "-synctex=0",
                 "-interaction=nonstopmode",
-                // "-file-line-error",
+                "-file-line-error",
                 "-xelatex",
                 "-auxdir=%OUTDIR%/tmp",
                 "-outdir=%OUTDIR%/release",
@@ -42,7 +43,9 @@
             "name": "xelatexmkS",
             "command": "latexmk",
             "args": [
+                "-synctex=0",
                 "-interaction=nonstopmode",
+                "-file-line-error",
                 "-xelatex",
                 "-auxdir=%OUTDIR%/tmp",
                 "-outdir=%OUTDIR%/release",
