@@ -1,12 +1,14 @@
 {
     "latex-workshop.intellisense.command.user": {
-        "content{}{}":"content{${1}}{${2}}"
+        "content{}{}":"content{${1}}{${2}}",
+        "subsubsubsection{}":"subsubsubsection{${1}}"
     },
     "latex-workshop.intellisense.package.extra": [
         "fancyhdr",
         "fontspec",
         "multirow",
         "tcolorbox",
+        "titlesec",
         "wrapfig",
         "xpinyin",
         "hyperref",
