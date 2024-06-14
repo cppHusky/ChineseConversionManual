@@ -4,9 +4,11 @@
         "subsubsubsection{}":"subsubsubsection{${1}}"
     },
     "latex-workshop.intellisense.package.extra": [
+        "booktabs",
         "fancyhdr",
         "fontspec",
         "multirow",
+        "nicematrix",
         "tcolorbox",
         "titlesec",
         "wrapfig",
