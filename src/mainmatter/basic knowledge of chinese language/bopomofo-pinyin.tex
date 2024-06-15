@@ -67,8 +67,8 @@
         \begin{scope}[shift={#1}]
             \draw[fill=white,draw=gray,very thick](0,0)--(1,0)--(1.1,-.1)--(1.1,-1.1)--(.1,-1.1)--(0,-1)--cycle;
             \draw[fill=#2!15,draw=gray,very thick](0,0)rectangle(1,-1);
-            \node[baseline] at(.7,-.3){#3};
-            \node[baseline] at(.3,-.7){\sffamily\small #4};
+            \draw (.35,-.42)node[anchor=base west]{#3};
+            \draw (0,-.82)node[anchor=base west]{\sffamily\small#4};
         \end{scope}
     }
     \newcommand{\drawlegend}[3]{
@@ -213,8 +213,8 @@
         \begin{scope}[shift={#1}]
             \draw[fill=white,draw=gray,very thick](0,0)--(1,0)--(1.1,-.1)--(1.1,-1.1)--(.1,-1.1)--(0,-1)--cycle;
             \draw[fill=#2!15,draw=gray,very thick](0,0)rectangle(1,-1);
-            \node[baseline] at(.7,-.3){#3};
-            \node[baseline] at(.3,-.7){\sffamily\small #4};
+            \draw (.35,-.42)node[anchor=base west]{#3};
+            \draw (0,-.82)node[anchor=base west]{\sffamily\small#4};
         \end{scope}
     }
     \centering
@@ -291,8 +291,8 @@
         \begin{scope}[shift={#1}]
             \draw[fill=white,draw=gray,very thick](0,0)--(1,0)--(1.1,-.1)--(1.1,-1.1)--(.1,-1.1)--(0,-1)--cycle;
             \draw[fill=#2!15,draw=gray,very thick](0,0)rectangle(1,-1);
-            \node[baseline] at(.7,-.3){#3};
-            \node[baseline] at(.3,-.7){\sffamily\small #4};
+            \draw (.35,-.42)node[anchor=base west]{#3};
+            \draw (0,-.82)node[anchor=base west]{\sffamily\small#4};
         \end{scope}
     }
     \centering
