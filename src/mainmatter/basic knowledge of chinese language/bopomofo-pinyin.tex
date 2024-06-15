@@ -63,11 +63,70 @@
 \content{筆者最初是透過注音鍵盤來接觸注音的。\cref*{figure:大千式注音鍵盤}展示了一種常見的注音鍵盤——大千式注音鍵盤。它把21個聲母、3個介母\footnote{介母是韻母的一種。在注音符號系統中，介母從韻母中單列出來——我們將在後文中看到，這種做法是有意義的；而在漢語拼音等方案中，明確區分出「介母」的概念已無必要。}和13個韻母從左到右，依次擺放起來。至於\cref{table:韻母表}中眾多的韻母，它們無非都是由這些介母和韻母組合而成的。}{笔者最初是通过注音键盘来接触注音的。\cref*{figure:大千式注音鍵盤}展示了一种常见的注音键盘——大千式注音键盘。它把21个声母、3个介母\footnote{介母是韵母的一种。在注音符号系统中，介母从韵母中单列出来——我们将在后文中看到，这种做法是有意义的；而在汉语拼音方案中，明确区分出“介母”的概念已无必要。}和13个韵母从左到右，依次摆放起来。至于\cref{table:韻母表}中众多的韵母，它们无非都是由这些介母和韵母组合而成的。}\par
 \content{只要了解了這些符號並掌握其拼讀規則，我們就可以用「注音輸入法」來打字了。}{只要了解了这些符号并掌握其拼读规则，我们就可以用“注音输入法”来打字了。}\par
 \begin{figure}[H]
+    \newcommand{\drawkey}[4]{
+        \begin{scope}[shift={#1}]
+            \draw[fill=white,draw=gray,very thick](0,0)--(1,0)--(1.1,-.1)--(1.1,-1.1)--(.1,-1.1)--(0,-1)--cycle;
+            \draw[fill=#2!15,draw=gray,very thick](0,0)rectangle(1,-1);
+            \node[baseline] at(.7,-.3){#3};
+            \node[baseline] at(.3,-.7){\sffamily\small #4};
+        \end{scope}
+    }
+    \newcommand{\drawlegend}[3]{
+        \begin{scope}[shift={#1}]
+            \draw[fill=white,draw=gray,very thick](0,0)--(.5,0)--(.55,-.05)--(.55,-.55)--(.05,-.55)--(0,-.5)--cycle;
+            \draw[fill=#2!15,draw=gray,very thick](0,0)rectangle(.5,-.5) node[anchor=base west]{#3};
+        \end{scope}
+    }
     \centering
-    \includegraphics[width=\textwidth]{\content{大千式注音鍵盤.png}{大千式注音鍵盤(簡).png}}
+    \begin{tikzpicture}
+        \drawkey{(0,0)}{red}{ㄅ}{1}
+        \drawkey{(1.2,0)}{red}{ㄉ}{2}
+        \drawkey{(2.4,0)}{black}{ˇ}{3}
+        \drawkey{(3.6,0)}{black}{ˋ}{4}
+        \drawkey{(4.8,0)}{red}{ㄓ}{5}
+        \drawkey{(6,0)}{black}{ˊ}{6}
+        \drawkey{(7.2,0)}{black}{˙}{7}
+        \drawkey{(8.4,0)}{blue}{ㄚ}{8}
+        \drawkey{(9.6,0)}{blue}{ㄞ}{9}
+        \drawkey{(10.8,0)}{blue}{ㄢ}{0}
+        \drawkey{(12,0)}{blue}{ㄦ}{-}
+        \drawkey{(.4,-1.2)}{red}{ㄆ}{Q}
+        \drawkey{(1.6,-1.2)}{red}{ㄊ}{W}
+        \drawkey{(2.8,-1.2)}{red}{ㄍ}{E}
+        \drawkey{(4,-1.2)}{red}{ㄐ}{R}
+        \drawkey{(5.2,-1.2)}{red}{ㄔ}{T}
+        \drawkey{(6.4,-1.2)}{red}{ㄗ}{Y}
+        \drawkey{(7.6,-1.2)}{green}{ㄧ}{U}
+        \drawkey{(8.8,-1.2)}{blue}{ㄛ}{I}
+        \drawkey{(10,-1.2)}{blue}{ㄟ}{O}
+        \drawkey{(11.2,-1.2)}{blue}{ㄣ}{P}
+        \drawkey{(.8,-2.4)}{red}{ㄇ}{A}
+        \drawkey{(2,-2.4)}{red}{ㄋ}{S}
+        \drawkey{(3.2,-2.4)}{red}{ㄎ}{D}
+        \drawkey{(4.4,-2.4)}{red}{ㄑ}{F}
+        \drawkey{(5.6,-2.4)}{red}{ㄕ}{G}
+        \drawkey{(6.8,-2.4)}{red}{ㄘ}{H}
+        \drawkey{(8,-2.4)}{green}{ㄨ}{J}
+        \drawkey{(9.2,-2.4)}{blue}{ㄜ}{K}
+        \drawkey{(10.4,-2.4)}{blue}{ㄠ}{L}
+        \drawkey{(11.6,-2.4)}{blue}{ㄤ}{;}
+        \drawkey{(1.2,-3.6)}{red}{ㄈ}{Z}
+        \drawkey{(2.4,-3.6)}{red}{ㄌ}{X}
+        \drawkey{(3.6,-3.6)}{red}{ㄏ}{C}
+        \drawkey{(4.8,-3.6)}{red}{ㄒ}{V}
+        \drawkey{(6,-3.6)}{red}{ㄖ}{B}
+        \drawkey{(7.2,-3.6)}{red}{ㄙ}{N}
+        \drawkey{(8.4,-3.6)}{green}{ㄩ}{M}
+        \drawkey{(9.6,-3.6)}{blue}{ㄝ}{,}
+        \drawkey{(10.8,-3.6)}{blue}{ㄡ}{.}
+        \drawkey{(12,-3.6)}{blue}{ㄥ}{/}
+        \drawlegend{(3,-5)}{red}{\content{聲母}{声母}}
+        \drawlegend{(5,-5)}{green}{\content{介母}{介母}}
+        \drawlegend{(7,-5)}{blue}{\content{韻母}{韵母}};
+        \drawlegend{(9,-5)}{black}{\content{聲調}{声调}};
+    \end{tikzpicture}
     \caption{\content{大千式注音輪入法的鍵盤排列}{大千式注音输入法的键盘排列}}
     \label{figure:大千式注音鍵盤}
-    {\footnotesize \content{圖片來源：維基共享資源}{图片来源：维基共享资源}}
 \end{figure}
 \content{注音的聲母與拼音一一對應（唯有拼音中的 i u 是例外），所以我就按照注音鍵盤的順序，列出\cref*{table:注音鍵盤聲母表}，以供讀者參考。}{注音的声母与拼音一一对应（唯有拼音中的 i u 是例外），所以我就按照注音键盘的顺序，列出\cref*{table:注音鍵盤聲母表}，以供读者参考。}\par
 \begin{table}[H]
@@ -150,8 +209,58 @@
 \content{對於「zh ch sh r z c s」七個聲母來說，它們可以獨立成音，而不需要韻母，我們把這種情況稱作空韻母\footnote{實際上它們的韻母是「ㄭ -i」，這是一個不同於「ㄧ i」的韻母音。但「ㄭ -i」在注音系統中也一般不會使用，故正文不提。}。所以在為「知」字注音時只需要一個聲母「ㄓ」就可以了！}{对于“zh ch sh r z c s”七个声母来说，它们可以独立成音，而不需要韵母，我们把这种情况称作空韵母\footnote{实际上它们的韵母是“ㄭ -i”，这是一个不同于“ㄧ i”的韵母音。但“ㄭ -i”在注音系统中也一般不会使用，故正文不提。}。所以在为“知”字注音时只需要一个声母“ㄭ”就可以了！}\par
 \content{同理，「食」「日」「思」的注音分別為「ㄕˊ」「ㄖˋ」「ㄙ」。它們都是空韻母音節。如果非要加上韻母「ㄧ」，那反而錯了。}{同理，“食”“日”“思”的注音分别为“ㄕˊ”“ㄖˋ”“ㄙ”。它们都是空韵母音节。如果非要加上韵母“ㄧ”，那反而错了。}\par
 \begin{figure}[H]
-	\centering
-	\includegraphics[width=.8\textwidth]{大千式注音鍵盤-空韻母.png}
+    \newcommand{\drawkey}[4]{
+        \begin{scope}[shift={#1}]
+            \draw[fill=white,draw=gray,very thick](0,0)--(1,0)--(1.1,-.1)--(1.1,-1.1)--(.1,-1.1)--(0,-1)--cycle;
+            \draw[fill=#2!15,draw=gray,very thick](0,0)rectangle(1,-1);
+            \node[baseline] at(.7,-.3){#3};
+            \node[baseline] at(.3,-.7){\sffamily\small #4};
+        \end{scope}
+    }
+    \centering
+    \begin{tikzpicture}
+        \drawkey{(0,0)}{black}{ㄅ}{1}
+        \drawkey{(1.2,0)}{black}{ㄉ}{2}
+        \drawkey{(2.4,0)}{black}{ˇ}{3}
+        \drawkey{(3.6,0)}{black}{ˋ}{4}
+        \drawkey{(4.8,0)}{red}{ㄓ}{5}
+        \drawkey{(6,0)}{black}{ˊ}{6}
+        \drawkey{(7.2,0)}{black}{˙}{7}
+        \drawkey{(8.4,0)}{black}{ㄚ}{8}
+        \drawkey{(9.6,0)}{black}{ㄞ}{9}
+        \drawkey{(10.8,0)}{black}{ㄢ}{0}
+        \drawkey{(12,0)}{black}{ㄦ}{-}
+        \drawkey{(.4,-1.2)}{black}{ㄆ}{Q}
+        \drawkey{(1.6,-1.2)}{black}{ㄊ}{W}
+        \drawkey{(2.8,-1.2)}{black}{ㄍ}{E}
+        \drawkey{(4,-1.2)}{black}{ㄐ}{R}
+        \drawkey{(5.2,-1.2)}{red}{ㄔ}{T}
+        \drawkey{(6.4,-1.2)}{red}{ㄗ}{Y}
+        \drawkey{(7.6,-1.2)}{black}{ㄧ}{U}
+        \drawkey{(8.8,-1.2)}{black}{ㄛ}{I}
+        \drawkey{(10,-1.2)}{black}{ㄟ}{O}
+        \drawkey{(11.2,-1.2)}{black}{ㄣ}{P}
+        \drawkey{(.8,-2.4)}{black}{ㄇ}{A}
+        \drawkey{(2,-2.4)}{black}{ㄋ}{S}
+        \drawkey{(3.2,-2.4)}{black}{ㄎ}{D}
+        \drawkey{(4.4,-2.4)}{black}{ㄑ}{F}
+        \drawkey{(5.6,-2.4)}{red}{ㄕ}{G}
+        \drawkey{(6.8,-2.4)}{red}{ㄘ}{H}
+        \drawkey{(8,-2.4)}{black}{ㄨ}{J}
+        \drawkey{(9.2,-2.4)}{black}{ㄜ}{K}
+        \drawkey{(10.4,-2.4)}{black}{ㄠ}{L}
+        \drawkey{(11.6,-2.4)}{black}{ㄤ}{;}
+        \drawkey{(1.2,-3.6)}{black}{ㄈ}{Z}
+        \drawkey{(2.4,-3.6)}{black}{ㄌ}{X}
+        \drawkey{(3.6,-3.6)}{black}{ㄏ}{C}
+        \drawkey{(4.8,-3.6)}{black}{ㄒ}{V}
+        \drawkey{(6,-3.6)}{red}{ㄖ}{B}
+        \drawkey{(7.2,-3.6)}{red}{ㄙ}{N}
+        \drawkey{(8.4,-3.6)}{black}{ㄩ}{M}
+        \drawkey{(9.6,-3.6)}{black}{ㄝ}{,}
+        \drawkey{(10.8,-3.6)}{black}{ㄡ}{.}
+        \drawkey{(12,-3.6)}{black}{ㄥ}{/}
+    \end{tikzpicture}
 	\caption{\content{空韻母對應的注音符號在注音鍵盤中的位置}{空韵母对应的注音符号在注音键盘中的位置}}
 	\label{figure:空韻母對應的注音符號在注音鍵盤中的位置}
 \end{figure}
@@ -178,8 +287,58 @@
     \end{NiceTabular}
 \end{table}
 \begin{figure}[H]
+    \newcommand{\drawkey}[4]{
+        \begin{scope}[shift={#1}]
+            \draw[fill=white,draw=gray,very thick](0,0)--(1,0)--(1.1,-.1)--(1.1,-1.1)--(.1,-1.1)--(0,-1)--cycle;
+            \draw[fill=#2!15,draw=gray,very thick](0,0)rectangle(1,-1);
+            \node[baseline] at(.7,-.3){#3};
+            \node[baseline] at(.3,-.7){\sffamily\small #4};
+        \end{scope}
+    }
     \centering
-    \includegraphics[width=.8\textwidth]{大千式注音鍵盤-韻母推導.png}
+    \begin{tikzpicture}
+        \drawkey{(0,0)}{black}{ㄅ}{1}
+        \drawkey{(1.2,0)}{black}{ㄉ}{2}
+        \drawkey{(2.4,0)}{black}{ˇ}{3}
+        \drawkey{(3.6,0)}{black}{ˋ}{4}
+        \drawkey{(4.8,0)}{black}{ㄓ}{5}
+        \drawkey{(6,0)}{black}{ˊ}{6}
+        \drawkey{(7.2,0)}{black}{˙}{7}
+        \drawkey{(8.4,0)}{black}{ㄚ}{8}
+        \drawkey{(9.6,0)}{black}{ㄞ}{9}
+        \drawkey{(10.8,0)}{black}{ㄢ}{0}
+        \drawkey{(12,0)}{black}{ㄦ}{-}
+        \drawkey{(.4,-1.2)}{black}{ㄆ}{Q}
+        \drawkey{(1.6,-1.2)}{black}{ㄊ}{W}
+        \drawkey{(2.8,-1.2)}{black}{ㄍ}{E}
+        \drawkey{(4,-1.2)}{black}{ㄐ}{R}
+        \drawkey{(5.2,-1.2)}{black}{ㄔ}{T}
+        \drawkey{(6.4,-1.2)}{black}{ㄗ}{Y}
+        \drawkey{(7.6,-1.2)}{black}{ㄧ}{U}
+        \drawkey{(8.8,-1.2)}{black}{ㄛ}{I}
+        \drawkey{(10,-1.2)}{blue}{ㄟ}{O}
+        \drawkey{(11.2,-1.2)}{blue}{ㄣ}{P}
+        \drawkey{(.8,-2.4)}{black}{ㄇ}{A}
+        \drawkey{(2,-2.4)}{black}{ㄋ}{S}
+        \drawkey{(3.2,-2.4)}{black}{ㄎ}{D}
+        \drawkey{(4.4,-2.4)}{black}{ㄑ}{F}
+        \drawkey{(5.6,-2.4)}{black}{ㄕ}{G}
+        \drawkey{(6.8,-2.4)}{black}{ㄘ}{H}
+        \drawkey{(8,-2.4)}{black}{ㄨ}{J}
+        \drawkey{(9.2,-2.4)}{black}{ㄜ}{K}
+        \drawkey{(10.4,-2.4)}{black}{ㄠ}{L}
+        \drawkey{(11.6,-2.4)}{black}{ㄤ}{;}
+        \drawkey{(1.2,-3.6)}{black}{ㄈ}{Z}
+        \drawkey{(2.4,-3.6)}{black}{ㄌ}{X}
+        \drawkey{(3.6,-3.6)}{black}{ㄏ}{C}
+        \drawkey{(4.8,-3.6)}{black}{ㄒ}{V}
+        \drawkey{(6,-3.6)}{black}{ㄖ}{B}
+        \drawkey{(7.2,-3.6)}{black}{ㄙ}{N}
+        \drawkey{(8.4,-3.6)}{black}{ㄩ}{M}
+        \drawkey{(9.6,-3.6)}{black}{ㄝ}{,}
+        \drawkey{(10.8,-3.6)}{blue}{ㄡ}{.}
+        \drawkey{(12,-3.6)}{blue}{ㄥ}{/}
+    \end{tikzpicture}
     \caption{\content{需要推導的四個韻母在注音鍵盤中的位置}{需要推导的四个韵母在注音键盘中的位置}}
     \label{figure:需要推導的四個韻母在注音鍵盤中的位置}
 \end{figure}

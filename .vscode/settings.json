@@ -9,6 +9,7 @@
         "fontspec",
         "multirow",
         "nicematrix",
+        "tikz",
         "tcolorbox",
         "titlesec",
         "wrapfig",
