@@ -16,6 +16,8 @@
 \usepackage{titlesec}
 \usepackage{titletoc}
 \usepackage{wrapfig}
+\usepackage{xcolor}
+\usepackage{xparse}
 \usepackage{xpinyin}
 \setmainfont{Noto Serif}
 \setsansfont{Noto Sans}
@@ -41,8 +43,8 @@
     filecolor=magenta,
     urlcolor=blue,
 }
-\newboolean{TraditionalChinese}
-\newcommand{\content}[2]{\ifbool{TraditionalChinese}{#1}{#2}}
+\newboolean{TraditionalChineseQ}
+\newcommand{\content}[2]{\ifbool{TraditionalChineseQ}{#1}{#2}}
 \graphicspath{
     {../figures/knowledge}
     {../figures/simplified characters}
@@ -53,3 +55,66 @@
 \titlespacing*{\subsubsubsection}{2em}{1.5ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 \titlecontents{subsubsubsection}[7em]{\normalsize}{\thecontentslabel\hspace{.5em}}{}{\titlerule*[1pc]{.}\contentspage}
 \NiceMatrixOptions{cell-space-top-limit=3pt}
+\tcbsetforeverylayer{
+    notitle,
+    nobeforeafter,
+    rounded corners=all,
+    colback=black!10,
+    colframe=black!25,
+    boxrule=1pt,
+    height=1.3em,
+    boxsep=0em,
+    top=.1em,
+    bottom=.1em,
+    left=.2em,
+    right=.2em,
+    tcbox raise=-2.5pt,
+    valign=center,
+}
+\NewDocumentCommand{\boxzhuyin}{O{true}m}{
+    \ifbool{#1}{
+        \tcbox[%standalone
+            colback=blue!5,
+            left skip=-.3em,
+            right skip=-.3em,
+        ]{#2}
+    }{
+        \tcbox[%combined
+            sharp corners=east,
+            colback=blue!7.5,
+            colframe=blue!50!black!20,
+            rightrule=0pt,
+            right skip=-.525em,
+            tcbox raise=0pt,
+        ]{#2}
+    }
+}
+\NewDocumentCommand{\boxpinyin}{O{true}m}{
+    \ifbool{#1}{
+        \tcbox[%standalone
+            colback=red!5,
+            left skip=-.3em,
+            right skip=-.3em,
+        ]{#2}
+    }{
+        \tcbox[%combined
+            sharp corners=west,
+            colback=red!7.5,
+            colframe=red!50!black!20,
+            leftrule=0pt,
+            left skip=-.525em,
+            tcbox raise=0pt,
+        ]{#2}
+    }
+}
+\NewDocumentCommand{\boxzhupin}{mm}{
+    \tcbox[
+        opacityframe=0,
+        opacityback=0,
+        opacityfill=0,
+        left=-.625em,
+        right=-.625em,
+    ]{
+        \boxzhuyin[false]{#1}\boxpinyin[false]{#2}
+    }
+}
