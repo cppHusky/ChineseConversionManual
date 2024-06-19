@@ -12,7 +12,7 @@
         "fontspec",
         "multirow",
         "nicematrix",
-        "subfiure", 
+        "subcaption", 
         "tikz",
         "tcolorbox",
         "titlesec",

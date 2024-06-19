@@ -59,19 +59,20 @@
 \content{對於漢語來說，一個音節最多只能有一個\textbf{聲母}和一個\textbf{韻母}。而韻母又可以進一步細分成\textbf{韻頭（介音）}和\textbf{韻身}。韻身還可以再細分成韻腹和韻尾，但本書就不深入研究這點了。\cref*{figure:以「窗」為例，分析音節構成}是對「窗」字按此標準劃分出的音節成分。}{对于汉语来说，一个音节最多只能有一个\textbf{声母}和一个\textbf{韵母}。而韵母又可以进一步细分成\textbf{韵头（介音）}和\textbf{韵身}。韵身还可以再细分成韵腹和韵尾，但本书就不深入研究这点了。\cref*{figure:以「窗」為例，分析音節構成}是对“窗”字按此标准划分出的音节成分。}\par
 \begin{figure}[H]
     \centering
-    \subfigure[注音]{
+    \begin{subcaptionblock}{.45\textwidth}
+        \centering
         \begin{tikzpicture}[
             level 1/.style={
                 level distance=15mm,
-                sibling distance=30mm,
+                sibling distance=26mm,
             },
             level 2/.style={
                 level distance=15mm,
-                sibling distance=30mm,
+                sibling distance=26mm,
             },
             level 3/.style={
                 level distance=15mm,
-                sibling distance=30mm,
+                sibling distance=26mm,
             },
         ]
             \node{\content{音節}{音节}\boxzhuyin{ㄔㄨㄤ}}
@@ -88,20 +89,22 @@
                 }
             };
         \end{tikzpicture}
-    }
-    \subfigure[拼音]{
+        \caption{\content{注音}{注音}}
+    \end{subcaptionblock}
+    \begin{subcaptionblock}{.45\textwidth}
+        \centering
         \begin{tikzpicture}[
             level 1/.style={
                 level distance=15mm,
-                sibling distance=30mm,
+                sibling distance=26mm,
             },
             level 2/.style={
                 level distance=15mm,
-                sibling distance=30mm,
+                sibling distance=26mm,
             },
             level 3/.style={
                 level distance=15mm,
-                sibling distance=30mm,
+                sibling distance=26mm,
             },
         ]
             \node{\content{音節}{音节}\boxpinyin{chuang}}
@@ -118,7 +121,8 @@
                 }
             };
         \end{tikzpicture}
-    }
+        \caption{\content{拼音}{拼音}}
+    \end{subcaptionblock}
     \caption{\content{以「窗」字為例，分析音節構成}{以“窗”字为例，分析音节构成}}
     \label{figure:以「窗」為例，分析音節構成}
 \end{figure}
@@ -128,7 +132,7 @@
 \content{筆者認為，了解注音符號的「字源」並與已有的漢字知識建立適當的聯係，是快速掌握注音符號的不二法門。注音符號雖為人造，但也有章法可循，多以古字、異體字或其部件構成，取其聲、韻而得。因此，哪怕只是簡單了解其字源，都可能對學習注音符號大有禆益——至少，有很多符號不需要靠死記硬背來記憶了。}{笔者认为，了解注音符号的“字源”并与已有的汉字知识建立适当的联系，是快速掌握注音符号的不二法门。注音符号虽为人造，但也有音法可循，多以古字、异体字或其部件构成，取其声、韵而得。因此，哪怕只是间单了解其字源，者可能对学习注音符号大有禆益——至少，有很多符号不需要靠死记硬背来记忆了。}\par
 \content{\href{https://zh.wikipedia.org/zh-tw/注音符號\#符號字源及發音}{注音符號\#符號字源及發音 - 維基百科}為我們提供了一份詳盡的列表，可供讀者考查字源。}{\href{https://zh.wikipedia.org/zh-cn/注音符號\#符號字源及發音}{注音符号\#符号字源及发音 - 维基百科}为我们提供了一份详尽的列表，可供读者考查字源。}\par
 \content{\cref{appendix:注音符號、漢語拼音表}則是筆者根據維基百科及《漢語拼音方案》等資料整理而成的，可以作為注音、拼音轉換的可靠參考。}{\cref{appendix:注音符號、漢語拼音表}则是笔者根据维基百科及《汉语拼音方案》等资料整理而成的，可以作为注音、拼音转换的可靠参考。}\par
-\content{但是，筆者並不很喜歡這個表格。它看上去很轉業，也很詳盡，但它的韻母表太過複雜，容易讓讀者望而卻步。筆者更喜歡用「推導」替代「記憶」，即，只需要記住\textbf{必備的基礎}和\textbf{推導的規則}，然後把剩下的部分交給推導而非記憶。我們在學習繁簡轉換的過程中將常常與這種方法打交道，比如，若是你知道「馬」的簡化字是「马」，那麼猜想「媽」的簡化字是「妈」就滿合理的。}{但是，笔者并不很喜欢这个表格。它看上去很专业，也很详尽，但它的韵母表太过复杂，容易让读者望而却步。笔者更喜欢用“推导”替代“记忆”，即，只需要记住\textbf{必备的基础}和\textbf{推导的规则}，然后把剩下的部分交给推导而非记忆。我们在学习繁简转换的过程中将常常与这种方法钉交道，比如，若是你知道“马”的繁体字是“馬”，那么猜想“妈”的繁体字是“媽”就蛮合理的。}\par
+\content{但是，筆者並不很喜歡這個表格。它看上去很轉業，也很詳盡，但它的韻母表太過複雜，容易讓讀者望而卻步。筆者更喜歡用「推導」替代「記憶」，即，只需要記住\textbf{必備的基礎}和\textbf{推導的規則}，然後把剩下的部分交給推導而非記憶。我們在學習繁簡轉換的過程中將常常與這種方法打交道，比如，若是你知道「馬」的簡化字是「马」，那麼猜想「媽」的簡化字是「妈」就滿合理的。}{但是，笔者并不很喜欢这个表格。它看上去很专业，也很详尽，但它的韵母表太过复杂，容易让读者望而却步。笔者更喜欢用“推导”替代“记忆”，即，只需要记住\textbf{必备的基础}和\textbf{推导的规则}，然后把剩下的部分交给推导而非记忆。我们在学习繁简转换的过程中将常常与这种方法打交道，比如，若是你知道“马”的繁体字是“馬”，那么猜想“妈”的繁体字是“媽”就蛮合理的。}\par
 \subsubsection{\content{必備的基礎}{必备的基础}}
 \content{筆者最初是透過注音鍵盤來接觸注音的。\cref*{figure:大千式注音鍵盤}展示了一種常見的注音鍵盤——大千式注音鍵盤。它把21個聲母、3個介音和13個韻母（其實是韻身）從左到右，依次擺放起來。至於\cref{table:韻母表}中眾多的韻母，它們無非都是由這些介音和韻身組合而成的。}{笔者最初是通过注音键盘来接触注音的。\cref*{figure:大千式注音鍵盤}展示了一种常见的注音键盘——大千式注音键盘。它把21个声母、3个介音和13个韵母（其实是韵身）从左到右，依次摆放起来。至于\cref{table:韻母表}中众多的韵母，它们无非都是由这些介音和韵身组合而成的。}\par
 \content{只要了解了這些符號並掌握其拼讀規則，我們就可以用「注音輸入法」來打字了。}{只要了解了这些符号并掌握其拼读规则，我们就可以用“注音输入法”来打字了。}\par
@@ -223,7 +227,7 @@
     \begin{NiceTabular}{>{\columncolor{blue!7.5}}c*{2}{>{\columncolor{red!7.5}}c}}[hlines]
         \toprule
         \rowcolor{gray!50}
-        注音符號 & 作韻母的拼音 & 作聲母的拼音 \\\midrule[.6pt]
+        \content{注音符號}{注音符号} & \content{作韻母的拼音}{作韵母的拼音} & \content{作聲母的拼音}{作声母的拼音} \\\midrule[.6pt]
         ㄧ & i & y \\
         ㄨ & u & w \\
         ㄩ & \"u & \\\bottomrule
@@ -451,3 +455,57 @@
 \content{在通韻中，拼音的\boxpinyin{eng}和\boxpinyin{ong}是兩個韻部，不能通押。從發音本身來看，\boxzhuyin{ㄨ}和\boxzhuyin{ㄥ}拼起來的\boxpinyin{ueng}也與\boxpinyin{ong}音有明顯差異。但是，注音系統並沒有區分這兩個音，只是規定它們在不同場合下讀法不同：零聲母時讀成\boxpinyin{weng}，有聲母時讀成\boxpinyin{ong}。}{在通韵中，拼间的\boxpinyin{eng}和\boxpinyin{ong}是两个韵部，不能通押。从发音本身来看，\boxzhuyin{ㄨ}和\boxzhuyin{ㄥ}拼起来的\boxpinyin{ueng}也与\boxpinyin{ong}音有明显差异。但是，注音系统并没有区分这两个音，只是规定它们在不同场合下读法不同：零声母时读成\boxpinyin{weng}，有声母时读成\boxpinyin{ong}。}\par
 \content{另外，\boxpinyin{iong}的注音寫法也不是單純加個\boxpinyin{i}，寫成\boxzhuyin{ㄧㄨㄥ}；而是把\boxzhuyin{ㄨ}改成了\boxzhuyin{ㄩ}，寫成\boxzhuyin{ㄩㄥ}。所以「用」字的注音是\boxzhuyin{ㄩㄥˋ}；「兄」字的注音是\boxzhuyin{ㄒㄩㄥ}。}{另外，\boxpinyin{iong}的注音写法也不是单纯加个\boxpinyin{i}，写成\boxzhuyin{ㄧㄨㄥ}；而是把\boxzhuyin{ㄨ}改成了\boxzhuyin{ㄩ}，写成\boxzhuyin{ㄩㄥ}。所以“用”字的注音是\boxzhuyin{ㄩㄥˋ}；“兄”字的注音是\boxzhuyin{ㄒㄩㄥ}。}\par
 \subsection{\content{由注音符號推導漢語拼音}{由注音符号推导汉语拼音}}
+\content{漢語拼音與注音符號之間存在很好的對應關係，所以要把一者「翻譯」成另一者是非常簡單的。對於有一定英文基礎的人來說，記憶拼音也是相當容易的——因為我們根據英文字母的讀法，就可以把一個拼音字母的讀音猜得八九不離十了。}{汉语拼音与注音符号之间存在很好的对应关系，所以要把一者“翻译”成另一者是非常简单的。对于有一定英文基础的人来譧，记忆拼音也是相当容易的——因为我们根据英文字母的读法，就可以把一个拼音字母的读音猜得八九不离十了。}\par
+\content{但是讀者也要當心聰明反被聰明誤。就拿拼音\boxpinyin{q}來說，實際上英文中的q常發類似於\boxzhupin{ㄎ}{k}的音（如unique, Iraq等詞）。那麼我們就有可能受此誤導，把\boxpinyin{q}對應到\boxzhuyin{ㄎ}上去了。但它其實應該是\boxzhuyin{ㄑ}才對。}{但是读者也要当心聪明反被聪明误。就拿拼音\boxpinyin{q}来说，实际上英文中的q常发类似于\boxzhupin{ㄎ}{k}的音（如unique, Iraq等词）。那么我们就有可能受此误导，把\boxpinyin{q}对应到\boxzhuyin{ㄎ}上示了。但它其实应该是\boxzhuyin{ㄑ}才对。}\par
+\content{再如，找們還可能受英文及威妥瑪拼音的影響，把\boxzhuyin{ㄑ}拼成\boxpinyin{chi}。類似的這些錯誤都是「籍由英文記憶拼音」時容易犯的，讀者需要留心。}{再如，我们还可能受英文及威妥玛拼音的影响，把\boxzhuyin{ㄑ}拼成\boxpinyin{chi}。类似的这些错误都是“借由英文记忆拼音”时容易犯的，读者需要留心。}\par
+\content{\cref{appendix:注音符號、漢語拼音表}是筆者根據維基百科及《漢語拼音方案》等資料整理而成的，可以作為注音、拼音轉換的可靠參考。}{\cref{appendix:注音符號、漢語拼音表}是笔者根据维基百科及《汉语拼音方案》等资料整理而成的，可以作为注音、拼音转换的可靠参考。}\par
+\content{但是，筆者並不很喜歡這個表格。它看上去很轉業，也很詳盡，但它的韻母表太過複雜，容易讓讀者望而卻步。筆者更喜歡用「推導」替代「記憶」，即，只需要記住\textbf{必備的基礎}和\textbf{推導的規則}，然後把剩下的部分交給推導而非記憶。我們在學習繁簡轉換的過程中將常常與這種方法打交道，比如，若是你知道「馬」的簡化字是「马」，那麼猜想「媽」的簡化字是「妈」就滿合理的。}{但是，笔者并不很喜欢这个表格。它看上去很专业，也很详尽，但它的韵母表太过复杂，容易让读者望而却步。笔者更喜欢用“推导”替代“记忆”，即，只需要记住\textbf{必备的基础}和\textbf{推导的规则}，然后把剩下的部分交给推导而非记忆。我们在学习繁简转换的过程中将常常与这种方法打交道，比如，若是你知道“马”的繁体字是“馬”，那么猜想“妈”的繁体字是“媽”就蛮合理的。}\par
+\subsubsection{\content{必備的基礎}{必备的基础}}
+\content{現行的注音體系\footnote{既不包含\boxzhuyin{ㄪㄫㄬ}等老國音聲母，也不使用韻符\boxzhuyin{ㄭ}。}包含21個聲母、3個介音和13個韻母（其實是韻身）。若是要做推導，我們至少需要先記住這37個符號對應的拼音，然後才談得上推導。}{现行的注音体系\footnote{既不包含\boxzhuyin{ㄪㄫㄬ}等老国音声母，也不使用韵符\boxzhuyin{ㄭ}。}包含21个声母、3个介音和13个韵母（其实是韵身）。若是要做推导，我们至少需要先记信这37个符号对应的拼音，然后才谈得上推导。}\par
+\content{21聲母和13韻母都與拼音一一對應：}{21声母和13韵母都与拼音一一对应：}
+\begin{table}[H]
+    \centering
+    \caption{\content{注音聲、韻母與拼音對照表}{注音声、韵母与拼音对照表}}
+    \label{table:注音聲、韻母與拼音對照表}
+    \begin{subcaptionblock}{.4\textwidth}
+        \centering
+        \begin{NiceTabular}{|*{4}{>{\columncolor{blue!7.5}}c>{\columncolor{red!7.5}}c|}}
+            \hline
+            ㄦ & er & ㄢ & an & ㄞ & ai & ㄚ & a \\
+            & & ㄣ & en & ㄟ & ei & ㄛ & o \\
+            & & ㄤ & ang & ㄠ & ao & ㄜ & e \\
+            & & ㄥ & eng & ㄡ & ou & ㄝ & \^e \\\hline
+        \end{NiceTabular}
+        \caption{\content{韻母部分}{韵母部分}}
+    \end{subcaptionblock}
+    \begin{subcaptionblock}{.8\textwidth}
+        \centering
+        \begin{NiceTabular}{|*{6}{>{\columncolor{blue!7.5}}c>{\columncolor{red!7.5}}c|}}
+            \hline
+            ㄗ & z & ㄓ & zh & ㄐ & j & ㄍ & g & ㄉ & d & ㄅ & b \\
+            ㄘ & c & ㄔ & ch & ㄑ & q & ㄎ & k & ㄊ & t & ㄆ & p \\
+            ㄙ & s & ㄕ & sh & ㄒ & x & ㄏ & h & ㄋ & n & ㄇ & m \\
+            & & ㄖ & r & & & & & ㄌ & l & ㄈ & f \\
+            \hline
+        \end{NiceTabular}
+        \caption{\content{聲母部分}{声母部分}}
+    \end{subcaptionblock}
+\end{table}
+\content{唯有介音的規則比較複雜。在使用介音時，我們一般是把它當作韻母的一部分（也就是韻頭）來用；但當整個音節沒有聲母時，介音可以「退化」為聲母，與韻身部分組成一個音節。在注音系統中，我們不需要關注這些細節；但在拼音系統中，介音作聲母和作韻母時卻有不同的寫法。}{唯有介音的规则经较复杂。在使用介音时，我们一般是把它当作韵母的一部分（也就是韵头）来用；但当整个音节没有声母时，介音可以“退化”为声母，与韵身部分组成一个音节。在注音系统中，我们不需要关注这些细节；但在拼音系统中，介音作声母和作韵母时却有不同的写法。}\par
+\begin{table}[H]
+    \centering
+    \caption{\content{注音介母與拼音對照表}{注音介母与拼音对照表}}
+    \label{table:注音介母與拼音對照表}
+    \begin{NiceTabular}{>{\columncolor{blue!7.5}}c*{2}{>{\columncolor{red!7.5}}c}}[hlines]
+        \toprule
+        \rowcolor{gray!50}
+        \content{注音符號}{注音符号} & \content{作韻母的拼音}{作韵母的拼音} & \content{作聲母的拼音}{作声母的拼音} \\\midrule[.6pt]
+        ㄧ & i & y \\
+        ㄨ & u & w \\
+        ㄩ & \"u & \\\bottomrule
+    \end{NiceTabular}
+\end{table}
+\content{最後是聲調的問題。漢語拼音中的聲調習慣與注音和威妥瑪拼音都不同，不是把音調記號放在字母的右上方，而是放在某一個字母的正上方，像\boxzhupin{ㄔㄨㄤ}{\pinyin{chuang1}}這樣。而值得探究的問題是，聲調符號到底要標在哪個字母的上方呢？我們稍後再來談。}{最后是声调的问题。汉语拼音中的声调习惯与注音和威妥玛拼音都不同，不是把音调记号放在字母的右上方，而是放在某一个字母的正上方，像\boxzhupin{ㄔㄨㄤ}{\pinyin{chuang1}}这样。而值得探究的问题是，声调符号到底要标在哪个字母的上方呢？我们稍后再来谈。}\par
+\content{另外，漢語拼音中的一聲（陰平）是需要用一橫來標出的，這點也與注音的習慣有所不同。在漢語拼音中，輕聲則是不標聲調的。}{另外，汉语拼音中的一声（阴平）是需要用一横来标出的，这点也与注音的习惯有所不同。在汉语拼音中，轻声则是不标声调的。}\par
+\subsubsection{\content{推導的規則}{推导的规则}}
+
