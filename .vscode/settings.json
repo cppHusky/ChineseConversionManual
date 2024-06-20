@@ -2,7 +2,7 @@
     "latex-workshop.intellisense.command.user": {
         "content{}{}":"content{${1}}{${2}}",
         "subsubsubsection{}":"subsubsubsection{${1}}",
-        "boxzhupin{}{}":"boxzhupin{${1}}{${2}}",
+        "boxzhupin{}{}":"bopin{${1}}{${2}}",
         "boxzhuyin{}":"boxzhuyin{${1}}",
         "boxpinyin{}":"boxpinyin{${1}}",
     },
