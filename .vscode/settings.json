@@ -45,7 +45,7 @@
                 "-xelatex",
                 "-auxdir=%OUTDIR%/tmp",
                 "-outdir=%OUTDIR%/release",
-                "%WORKSPACE_FOLDER%/src/mainT.tex"
+                "%WORKSPACE_FOLDER%/src/manualT.tex"
             ],
             "env": {}
         },
@@ -59,7 +59,7 @@
                 "-xelatex",
                 "-auxdir=%OUTDIR%/tmp",
                 "-outdir=%OUTDIR%/release",
-                "%WORKSPACE_FOLDER%/src/mainS.tex"
+                "%WORKSPACE_FOLDER%/src/manualS.tex"
             ],
             "env": {}
         }
