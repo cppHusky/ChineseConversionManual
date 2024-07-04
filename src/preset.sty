@@ -19,7 +19,7 @@
 \usepackage{titlesec}
 \usepackage{titletoc}
 \usepackage{wrapfig}
-\usepackage{xcolor}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{xparse}
 \usepackage{xpinyin}
 \setmainfont{Noto Serif}
@@ -79,7 +79,7 @@
 \NewDocumentCommand{\boxzhuyin}{O{true}m}{
     \ifbool{#1}{
         \tcbox[%standalone
-            colback=blue!5,
+            colback=blue!7.5,
             left skip=-.3em,
             right skip=-.3em,
         ]{#2}
@@ -97,7 +97,7 @@
 \NewDocumentCommand{\boxpinyin}{O{true}m}{
     \ifbool{#1}{
         \tcbox[%standalone
-            colback=red!5,
+            colback=red!7.5,
             left skip=-.3em,
             right skip=-.3em,
         ]{#2}
