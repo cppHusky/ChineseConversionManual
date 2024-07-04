@@ -70,14 +70,15 @@
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
-		\node[inner sep=0pt](main)at(0,0){\includegraphics[width=.5\textwidth]{徒手刻版.jpg}};
+		\node[inner sep=0pt](main)at(-.78,0){\includegraphics[width=.5\textwidth]{徒手刻版.jpg}};
 		\begin{scope}
 			\clip(8,0)circle(2.5);
 			\node[inner sep=0pt]at(-8.4,-1.6){\includegraphics[width=2.5\textwidth]{徒手刻版.jpg}};
 		\end{scope}
-		\node[draw,circle,blue,thin,minimum size=1cm](A)at(3.28,.32){};
-		\node[draw,circle,blue,thin,minimum size=5cm](B)at(8,0){};
-		\draw[blue](A)--(B);
+		\node[draw,circle,red!75,thin,minimum size=1cm](small)at(2.5,.32){};
+		\node[draw,circle,red!75,minimum size=5cm](big)at(8,0){};
+		\draw[dashed,red!75](tangent cs:node=small,point={(big.south)},solution=2)--(tangent cs:node=big,point={(small.south)},solution=1);
+		\draw[dashed,red!75](tangent cs:node=small,point={(big.north)},solution=1)--(tangent cs:node=big,point={(small.north)},solution=2);
 	\end{tikzpicture}
 	\caption{\content{徒手刻版}{徒手刻版}}
 	\label{figure:徒手刻版}
