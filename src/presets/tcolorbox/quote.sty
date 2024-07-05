@@ -1,17 +1,17 @@
 \definecolor{d2d2d2}{HTML}{d2d2d2}
 \definecolor{aa2300}{HTML}{aa2300}
-\RenewDocumentCommand{\quote}{mm}{
-    \begin{tcolorbox}[
-        natural height,
-        enhanced,
-        title={——#2},
-        attach boxed title to bottom right={xshift=-5mm,yshift=2mm},
-        boxed title style={colframe=aa2300},
-        colback=d2d2d2,
-        colbacktitle=aa2300,
-        colframe=gray,
-        leftright skip=1em,
-    ]
-        \textit{#1}
-    \end{tcolorbox}
+\newtcolorbox{boxquote}[2][]{
+    natural height,
+    enhanced,
+    title={——#2},
+    colbacktitle=aa2300,
+    attach boxed title to bottom right={xshift=-4mm,yshift=2mm},
+    boxed title style={colframe=aa2300},
+    colframe=gray!75,
+    leftrule=0pt,
+    rightrule=0pt,
+    sharpish corners,
+    leftright skip=1.2em,
+    interior style tile={width=\linewidth}{typeset/background.jpg},
+    fontupper=\itshape,
 }
