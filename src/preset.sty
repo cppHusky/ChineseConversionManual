@@ -13,9 +13,10 @@
 \usepackage{pxrubrica}
 \usepackage{subcaption}
 \usepackage{tcolorbox}
+    \tcbuselibrary{skins}
 \usepackage{tikz}
-\usetikzlibrary{calc}
-\usetikzlibrary{shapes}
+    \usetikzlibrary{calc}
+    \usetikzlibrary{shapes}
 \usepackage{titlesec}
 \usepackage{titletoc}
 \usepackage{wrapfig}
@@ -24,21 +25,7 @@
 \usepackage{xpinyin}
 \setmainfont{Noto Serif}
 \setsansfont{Noto Sans}
-\newCJKfontfamily{\zh}{Noto Serif CJK SC}
-\newCJKfontfamily{\tw}{Noto Serif CJK TC}
-\newCJKfontfamily{\hk}{Noto Serif CJK HK}
-\newCJKfontfamily{\zhsans}{Noto Sans CJK SC}
-\newCJKfontfamily{\twsans}{Noto Sans CJK TC}
-\newCJKfontfamily{\hksans}{Noto Sans CJK HK}
-\setCJKfallbackfamilyfont{\CJKrmdefault}{
-    {Hanazono Mincho A},
-    {Hanazono Mincho B},
-    {Hanazono Mincho C},
-    {Hanazono Mincho Ex A1},
-    {Hanazono Mincho Ex A2},
-    {Hanazono Mincho Ex B},
-    {Hanazono Mincho Ex C},
-}
+\import{./}{presets/xeCJK.sty}
 \geometry{a4paper,top=2cm,bottom=3.2cm,inner=2.5cm,outer=3.2cm}
 \hypersetup{
     colorlinks=true,
@@ -52,74 +39,10 @@
     {../figures/knowledge}
     {../figures}
 }
-\titleclass{\subsubsubsection}{straight}[\subsubsection]
-\titleformat{\subsubsubsection}{\normalfont\normalsize\bfseries}{}{1em}{}
-\titlespacing*{\subsubsubsection}{2em}{1.5ex plus 1ex minus .2ex}{1.5ex plus .2ex}
-\titlecontents{subsubsubsection}[7em]{\normalsize}{\thecontentslabel\hspace{.5em}}{}{\titlerule*[1pc]{.}\contentspage}
+\import{./}{presets/titlesec.sty}
 \NiceMatrixOptions{cell-space-top-limit=3pt}
 \tikzset{every picture/.level/.style={x=1cm,y=1cm}}
 \captionsetup[subfigure]{subrefformat=simple,labelformat=simple}
 \renewcommand{\thesubfigure}{(\alph{subfigure})}
-\tcbsetforeverylayer{
-    notitle,
-    nobeforeafter,
-    rounded corners=all,
-    colback=black!10,
-    colframe=black!25,
-    boxrule=1pt,
-    height=1.3em,
-    boxsep=0em,
-    top=.1em,
-    bottom=.1em,
-    left=.2em,
-    right=.2em,
-    tcbox raise=-3.14159265pt,
-    valign=center,
-}
-\NewDocumentCommand{\boxzhuyin}{O{true}m}{
-    \ifbool{#1}{
-        \tcbox[%standalone
-            colback=blue!7.5,
-            left skip=-.3em,
-            right skip=-.3em,
-        ]{#2}
-    }{
-        \tcbox[%combined
-            sharp corners=east,
-            colback=blue!7.5,
-            colframe=blue!50!black!20,
-            rightrule=0pt,
-            right skip=-.525em,
-            tcbox raise=0pt,
-        ]{#2}
-    }
-}
-\NewDocumentCommand{\boxpinyin}{O{true}m}{
-    \ifbool{#1}{
-        \tcbox[%standalone
-            colback=red!7.5,
-            left skip=-.3em,
-            right skip=-.3em,
-        ]{#2}
-    }{
-        \tcbox[%combined
-            sharp corners=west,
-            colback=red!7.5,
-            colframe=red!50!black!20,
-            leftrule=0pt,
-            left skip=-.525em,
-            tcbox raise=0pt,
-        ]{#2}
-    }
-}
-\NewDocumentCommand{\bopin}{mm}{
-    \tcbox[
-        opacityframe=0,
-        opacityback=0,
-        opacityfill=0,
-        left=-.625em,
-        right=-.625em,
-    ]{
-        \boxzhuyin[false]{#1}\boxpinyin[false]{#2}
-    }
-}
+\import{./}{presets/tcolorbox/boxzhupin.sty}
+\import{./}{presets/tcolorbox/quote.sty}
