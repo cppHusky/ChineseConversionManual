@@ -5,7 +5,9 @@
         "bopin{}{}":"bopin{${1}}{${2}}",
         "boxzhuyin{}":"boxzhuyin{${1}}",
         "boxpinyin{}":"boxpinyin{${1}}",
-        "quote{}{}":"quote{${1}}{${2}}"
+        "quote{}{}":"quote{${1}}{${2}}",
+        "inlineinfo{}{}":"inlineinfo{${1}}{${2}}",
+        "inlinelinkinfo{}{}":"inlinelinkinfo{${1}}{${2}}",
     },
     "latex-workshop.intellisense.package.extra": [
         "booktabs",
