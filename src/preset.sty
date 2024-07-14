@@ -7,6 +7,7 @@
 \usepackage{fontspec}
 \usepackage{hyperref,cleveref}
 \usepackage{geometry}
+\usepackage{graphbox}
 \usepackage{ifthen}
 \usepackage{import}
 \usepackage{indentfirst}
@@ -49,3 +50,4 @@
 \import{./}{presets/tcolorbox/quote.sty}
 \import{./}{presets/tcolorbox/horizontal compare.sty}
 \import{./}{presets/tcolorbox/inline info.sty}
+\NewDocumentCommand{\includecharacter}{O{}m}{\includegraphics[align=c,height=2ex,#1]{#2}}
