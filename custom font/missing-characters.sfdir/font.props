@@ -1,7 +1,7 @@
 SplineFontDB: 3.2
-FontName: Untitled1
-FullName: Untitled1
-FamilyName: Untitled1
+FontName: missing-characters
+FullName: missing characters
+FamilyName: missing-characters
 Weight: Regular
 Copyright: Copyright (c) 2024, Unknown
 UComments: "2024-7-19: Created with FontForge (http://fontforge.org)"
@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1721393550
-ModificationTime: 1721393550
+ModificationTime: 1721453105
 OS2TypoAscent: 0
 OS2TypoAOffset: 1
 OS2TypoDescent: 0
@@ -35,6 +35,7 @@ HheadAOffset: 1
 HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'PfEd'
+MarkAttachClasses: 1
 DEI: 91125
 Encoding: UnicodeFull
 UnicodeInterp: none
@@ -42,6 +43,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 199320 33 13
-OnlyBitmaps: 1
+WinInfo: 199584 33 13
+BeginPrivate: 0
+EndPrivate
 EndSplineFont
