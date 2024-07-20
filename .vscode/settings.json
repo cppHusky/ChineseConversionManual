@@ -1,14 +1,16 @@
 {
     "latex-workshop.intellisense.command.user": {
-        "content{}{}":"content{${1}}{${2}}",
-        "subsubsubsection{}":"subsubsubsection{${1}}",
         "bopin{}{}":"bopin{${1:zhuyin}}{${2:pinyin}}",
-        "boxzhuyin{}":"boxzhuyin{${1:zhuyin}}",
         "boxpinyin{}":"boxpinyin{${1:pinyin}}",
-        "inlineinfo{}{}":"inlineinfo{${1:type}}{${2:text}}",
-        "inlinelinkinfo{}{}":"inlinelinkinfo{${1:link}}{${2:text}}",
+        "boxzhuyin{}":"boxzhuyin{${1:zhuyin}}",
+        "content{}{}":"content{${1}}{${2}}",
         "includecharacter[]{}":"includecharacter[${1:options}]{${2:name}}",
         "includecharacter{}":"includecharacter{${1:name}}",
+        "inlineinfo{}{}":"inlineinfo{${1:type}}{${2:text}}",
+        "inlinelinkinfo{}{}":"inlinelinkinfo{${1:link}}{${2:text}}",
+        "subsubsubsection{}":"subsubsubsection{${1}}",
+        "shiftbaseline[]{}":"shiftbaseline[${1:height}]{${2:text}}",
+        "shiftbaseline{}":"shiftbaseline{${1:text}}",
     },
     "latex-workshop.intellisense.package.extra": [
         "booktabs",
@@ -72,4 +74,5 @@
     ],
     "latex-workshop.view.pdf.trim": 1,
     "latex-workshop.view.pdf.zoom": "page-width",
+    "editor.lineNumbers": "on",
 }
