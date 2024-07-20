@@ -24,6 +24,7 @@
         "tikz",
         "titlesec",
         "wrapfig",
+        "xfakebold",
         "xparse",
         "xpinyin",
     ],
