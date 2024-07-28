@@ -209,11 +209,11 @@
     \caption{\content{注音鍵盤聲母表}{注音键盘声母表}}
     \label{table:注音鍵盤聲母表}
     \begin{NiceTabular}{|*{6}{>{\columncolor{blue!7.5}}c>{\columncolor{red!7.5}}c|}}
-        \hline
+        \toprule
         ㄅ & b & ㄉ & d & & & & & ㄓ & zh & \\
         ㄆ & p & ㄊ & t & ㄍ & g & ㄐ & j & ㄔ & ch & ㄗ & z \\
         ㄇ & m & ㄋ & n & ㄎ & k & ㄑ & q & ㄕ & sh & ㄘ & c \\
-        ㄈ & f & ㄌ & l & ㄏ & h & ㄒ & x & ㄖ & r & ㄙ & s \\\hline
+        ㄈ & f & ㄌ & l & ㄏ & h & ㄒ & x & ㄖ & r & ㄙ & s \\\bottomrule
     \end{NiceTabular}
 \end{table}
 \content{若是縱向閱讀，你或許會發現這些符號的擺放順序很像國小時學習的「ㄅㄆㄇㄈ」「ㄉㄊㄋㄌ」「ㄍㄎㄏ」……的口訣——其實這就是方便使用者記憶鍵位而設定的啦。}{若是纵向阅读，你或许会发现这些符号的摆放顺序很像小学时学习的“b p m f”“d t n l”“g k h”……的口决——其实这就是方便使用者记忆键位而设置的啦。}\par
@@ -223,9 +223,13 @@
     \centering
     \caption{\content{注音鍵盤介音表}{注音键盘介音表}}
     \label{table:注音鍵盤介音表}
-    \begin{NiceTabular}{>{\columncolor{blue!7.5}}c*{2}{>{\columncolor{red!7.5}}c}}[hlines]
+    \begin{NiceTabular}{*{3}{c}}[hlines]
+    \CodeBefore
+        \columncolor{blue!7.5}{1}
+        \columncolor{red!7.5}{2-3}
+        \rowcolor{lightgray}{1}
+    \Body
         \toprule
-        \rowcolor{gray!50}
         \content{注音符號}{注音符号} & \content{作韻母的拼音}{作韵母的拼音} & \content{作聲母的拼音}{作声母的拼音} \\\midrule[.6pt]
         ㄧ & i & y \\
         ㄨ & u & w \\
@@ -236,8 +240,10 @@
 \begin{table}[H]
     \centering
     \begin{NiceTabular}{*{4}{c}}[hlines]
+    \CodeBefore
+        \rowcolor{lightgray}{1}
+    \Body
         \toprule
-        \rowcolor{gray!50}
         \content{無介音}{无介音} & 介音\bopin{ㄧ}{i} & 介音\bopin{ㄨ}{u} & 介音\bopin{ㄩ}{\"u} \\\midrule[.6pt]
         \bopin{ㄣ}{en} & \bopin{ㄧㄣ}{in} & \bopin{ㄨㄣ}{un} & \bopin{ㄩㄣ}{\"un} \\\bottomrule
     \end{NiceTabular}
@@ -249,12 +255,12 @@
     \caption{\content{注音鍵盤韻母表}{注音键盘韵母表}}
     \label{table:注音鍵盤韻母表}
     \begin{NiceTabular}{|*{4}{>{\columncolor{blue!7.5}}c>{\columncolor{red!7.5}}c|}}
-        \hline
+        \toprule
         ㄚ & a & ㄞ & ai & ㄢ & an & ㄦ & er \\
         ㄛ & o & ㄟ & ei & ㄣ & en & & \\
         ㄜ & e & ㄠ & ao & ㄤ & ang & & \\
         ㄝ & \^e & ㄡ & ou & ㄥ & eng & & \\
-        \hline
+        \bottomrule
     \end{NiceTabular}
 \end{table}
 \content{讀者或許會發現，\cref*{figure:大千式注音鍵盤}中還有四個符號：「ˇ\ ˊ\ ˋ\ ˙」。它們也是注音系統的成員——聲調符號。注音和拼音採用相同的聲調符號，所以我們很容易記住每個聲調意味著什麼（\cref*{table:注音聲調表}）。}{读者或许会发现，\cref*{figure:大千式注音鍵盤}中还有四个符号：“ˇ\ ˊ\ ˋ\ ˙”。它们也是注音系统的成员——声调符号。注音和拼音采用相同的声调符号，所以我们很容易记信每个声调意味着什么（\cref*{table:注音聲調表}）。}\par
@@ -263,8 +269,10 @@
     \caption{\content{注音聲調表}{注音声调表}}
     \label{table:注音聲調表}
     \begin{NiceTabular}{*{5}{c}}[hlines]
+    \CodeBefore
+        \rowcolor{lightgray}{1}
+    \Body
         \toprule
-        \rowcolor{gray!50}
         \content{陰平（一聲）}{阴平（一声）} & \content{陽平（二聲）}{阳平（二声）} & \content{上聲（三聲）}{上声（三声）} & \content{去聲（四聲）}{去声（四声）} & \content{輕聲}{轻声} \\\midrule[.6pt]
         \content{通常不標\footnote{在注音中，不標聲調表示一聲；這和拼音中不標聲調表示輕聲的習慣有所不同。}}{通常不标\footnote{在注音中，不标声调表示一声；这和拼音中不标声调表示轻声的习惯有所不同。}} & ˊ & ˇ & ˋ & ˙ \\\bottomrule
     \end{NiceTabular}
@@ -343,8 +351,10 @@
     \caption{需要推導的韻母}
     \label{table:需要推導的韻母}
     \begin{NiceTabular}{*{4}{c}}[hlines]
+    \CodeBefore
+        \rowcolor{lightgray}{1}
+    \Body
         \toprule
-        \rowcolor{gray!50}
         \content{所屬韻身}{所属韵身} & \content{標準形式}{标准形式} & \content{完整形式}{完整形式} & \content{注音符號}{注音符号} \\\midrule[.6pt]
         \bopin{ㄟ}{ei} & \boxpinyin{ui} & \boxpinyin{uei} & \boxzhuyin{ㄨㄟ} \\
         \bopin{ㄡ}{ou} & \boxpinyin{iu} & \boxpinyin{iou} & \boxzhuyin{ㄧㄡ} \\
@@ -419,8 +429,11 @@
     \centering
     \caption{\content{「偶」「有」「狗」「九」四字的拼音分析}{“偶”“有”“狗”“九”四字的拼音分析}}
     \label{table:「偶」「有」「狗」「九」四字的拼音分析}
-    \begin{NiceTabular}{|>{\columncolor{gray!50}}c|cc|cc|}[corners,hlines]
-        \rowcolor{gray!50}
+    \begin{NiceTabular}{|c|cc|cc|}[corners,hlines]
+    \CodeBefore
+        \rowcolor{lightgray}{1}
+        \columncolor{lightgray}{1}
+    \Body
         & \Block{1-2}{\content{韻母\boxpinyin{ou}}{韵母\boxpinyin{ou}}} & & \Block{1-2}{\content{韻母\boxpinyin{iu}}{韵母\boxpinyin{iu}}} & \\
         \content{零聲母}{零声母} & 偶 & \boxpinyin{\pinyin{ou3}} & 有 & \boxpinyin{\pinyin{you3}} \\
         \content{有聲母}{有声母} & 狗 & \boxpinyin{\pinyin{gou3}} & 九 & \boxpinyin{\pinyin{jiu3}} \\
@@ -431,8 +444,11 @@
     \centering
     \caption{\content{「偶」「有」「狗」「九」四字的注音分析}{“偶”“有”“狗”“九”四字的注音分析}}
     \label{table:「偶」「有」「狗」「九」四字的注音分析}
-    \begin{NiceTabular}{|>{\columncolor{gray!50}}c|cc|cc|}[corners,hlines]
-        \rowcolor{gray!50}
+    \begin{NiceTabular}{|c|cc|cc|}[corners,hlines]
+    \CodeBefore
+        \rowcolor{lightgray}{1}
+        \columncolor{lightgray}{1}
+    \Body
         & \Block{1-2}{\content{韻母\boxzhuyin{ㄡ}}{韵母\boxzhuyin{ㄡ}}} & & \Block{1-2}{\content{韻母\boxzhuyin{ㄧㄡ}}{韵母\boxzhuyin{ㄧㄡ}}} & \\
         \content{零聲母}{零声母} & 偶 & \boxzhuyin{ㄡˇ} & 有 & \boxzhuyin{ㄧㄡˇ} \\
         \content{有聲母}{有声母} & 狗 & \boxzhuyin{ㄍㄡˇ} & 九 & \boxzhuyin{ㄐㄧㄡˇ} \\
@@ -463,23 +479,22 @@
     \begin{subcaptionblock}{.6\textwidth}
         \centering
         \begin{NiceTabular}{|*{4}{>{\columncolor{blue!7.5}}c>{\columncolor{red!7.5}}c|}}
-            \hline
+            \toprule
             ㄦ & er & ㄢ & an & ㄞ & ai & ㄚ & a \\
             & & ㄣ & en & ㄟ & ei & ㄛ & o \\
             & & ㄤ & ang & ㄠ & ao & ㄜ & e \\
-            & & ㄥ & eng & ㄡ & ou & ㄝ & \^e \\\hline
+            & & ㄥ & eng & ㄡ & ou & ㄝ & \^e \\\bottomrule
         \end{NiceTabular}
         \caption{\content{韻母部分}{韵母部分}}
     \end{subcaptionblock}
     \begin{subcaptionblock}{.8\textwidth}
         \centering
         \begin{NiceTabular}{|*{6}{>{\columncolor{blue!7.5}}c>{\columncolor{red!7.5}}c|}}
-            \hline
+            \toprule
             ㄗ & z & ㄓ & zh & ㄐ & j & ㄍ & g & ㄉ & d & ㄅ & b \\
             ㄘ & c & ㄔ & ch & ㄑ & q & ㄎ & k & ㄊ & t & ㄆ & p \\
             ㄙ & s & ㄕ & sh & ㄒ & x & ㄏ & h & ㄋ & n & ㄇ & m \\
-            & & ㄖ & r & & & & & ㄌ & l & ㄈ & f \\
-            \hline
+            & & ㄖ & r & & & & & ㄌ & l & ㄈ & f \\\bottomrule
         \end{NiceTabular}
         \caption{\content{聲母部分}{声母部分}}
     \end{subcaptionblock}
@@ -489,9 +504,13 @@
     \centering
     \caption{\content{注音介母與拼音對照表}{注音介母与拼音对照表}}
     \label{table:注音介母與拼音對照表}
-    \begin{NiceTabular}{>{\columncolor{blue!7.5}}c*{2}{>{\columncolor{red!7.5}}c}}[hlines]
+    \begin{NiceTabular}{*{3}{c}}[hlines]
+    \CodeBefore
+        \columncolor{blue!7.5}{1}
+        \columncolor{red!7.5}{2-3}
+        \rowcolor{lightgray}{1}
+    \Body
         \toprule
-        \rowcolor{gray!50}
         \content{注音符號}{注音符号} & \content{作韻母的拼音}{作韵母的拼音} & \content{作聲母的拼音}{作声母的拼音} \\\midrule[.6pt]
         ㄧ & i & y \\
         ㄨ & u & w \\
@@ -515,8 +534,10 @@
     \caption{\content{需要簡化的韻母}{需要简化的韵母}}
     \label{table:需要簡化的韻母}
     \begin{NiceTabular}{*{4}{c}}[hlines]
+    \CodeBefore
+        \rowcolor{lightgray}{1}
+    \Body
         \toprule
-        \rowcolor{gray!50}
         \content{所屬韻身}{所属韵身} & \content{注音符號}{注音符號} & \content{拼音轉寫}{拼音转写} & \content{標準拼音}{标准拼音} \\\midrule[.6pt]
         \bopin{ㄟ}{ei} & \boxzhuyin{ㄨㄟ} & \boxpinyin{uei} & \boxpinyin{ui} \\
         \bopin{ㄡ}{ou} & \boxzhuyin{ㄨㄡ} & \boxpinyin{iou} & \boxpinyin{iu} \\
@@ -532,8 +553,11 @@
     \centering
     \caption{\content{「偶」「有」「狗」「九」四字的注音分析}{“偶”“有”“狗”“九”四字的注音分析}}
     \label{table:「偶」「有」「狗」「九」四字的注音分析*}
-    \begin{NiceTabular}{|>{\columncolor{gray!50}}c|cc|cc|}[corners,hlines]
-        \rowcolor{gray!50}
+    \begin{NiceTabular}{|c|cc|cc|}[corners,hlines]
+    \CodeBefore
+        \rowcolor{lightgray}{1}
+        \columncolor{lightgray}{1}
+    \Body
         & \Block{1-2}{\content{韻母\boxzhuyin{ㄡ}}{韵母\boxzhuyin{ㄡ}}} & & \Block{1-2}{\content{韻母\boxzhuyin{ㄧㄡ}}{韵母\boxzhuyin{ㄧㄡ}}} & \\
         \content{零聲母}{零声母} & 偶 & \boxzhuyin{ㄡˇ} & 有 & \boxzhuyin{ㄧㄡˇ} \\
         \content{有聲母}{有声母} & 狗 & \boxzhuyin{ㄍㄡˇ} & 九 & \boxzhuyin{ㄐㄧㄡˇ} \\
@@ -547,8 +571,10 @@
     \centering
     \caption{\content{「偶」「有」「狗」「九」四字的拼音分析}{“偶”“有”“狗”“九”四字的拼音分析}}
     \label{table:「偶」「有」「狗」「九」四字的拼音分析*}
-    \begin{NiceTabular}{|>{\columncolor{gray!50}}c|cc|cc|}[corners,hlines]
-        \rowcolor{gray!50}
+    \begin{NiceTabular}{|c|cc|cc|}[corners,hlines]
+    \CodeBefore
+        \rowcolor{lightgray}{1}
+    \Body
         & \Block{1-2}{\content{韻母\boxpinyin{ou}}{韵母\boxpinyin{ou}}} & & \Block{1-2}{\content{韻母\boxpinyin{iu}}{韵母\boxpinyin{iu}}} & \\
         \content{零聲母}{零声母} & 偶 & \boxpinyin{\pinyin{ou3}} & 有 & \boxpinyin{\pinyin{you3}} \\
         \content{有聲母}{有声母} & 狗 & \boxpinyin{\pinyin{gou3}} & 九 & \boxpinyin{\pinyin{jiu3}} \\
