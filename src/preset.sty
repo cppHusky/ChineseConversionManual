@@ -35,7 +35,7 @@
 \usepackage{xpinyin}
 \setmainfont{Noto Serif}
 \setsansfont{Noto Sans}
-\import{./}{presets/xeCJK.sty}
+\import{presets/}{xeCJK.sty}
 \geometry{a4paper,top=2cm,bottom=3.2cm,inner=2.5cm,outer=3.2cm}
 \hypersetup{
     colorlinks=true,
@@ -49,15 +49,16 @@
     {../figures/knowledge}
     {../figures}
 }
-\import{./}{presets/titlesec.sty}
+\import{presets/}{titlesec.sty}
 \NiceMatrixOptions{cell-space-top-limit=3pt}
 \tikzset{every picture/.level/.style={x=1cm,y=1cm}}
 \captionsetup[subfigure]{subrefformat=simple,labelformat=simple}
 \renewcommand{\thesubfigure}{(\alph{subfigure})}
-\import{./}{presets/tcolorbox/boxzhupin.sty}
-\import{./}{presets/tcolorbox/quote.sty}
-\import{./}{presets/tcolorbox/horizontal compare.sty}
-\import{./}{presets/tcolorbox/inline info.sty}
+\import{presets/tcolorbox/}{boxzhupin.sty}
+\import{presets/tcolorbox/}{charcode.sty}
+\import{presets/tcolorbox/}{horizontal compare.sty}
+\import{presets/tcolorbox/}{inline info.sty}
+\import{presets/tcolorbox/}{quote.sty}
 \NewDocumentCommand{\includecharacter}{O{}m}{\includegraphics[align=c,height=2ex,#1]{#2}}
 \NewDocumentCommand{\shiftbaseline}{O{.125ex}m}{\raisebox{#1}{#2}}
 \NewDocumentCommand{\fakebf}{O{.3}m}{\setBold[#1]#2\unsetBold}

@@ -3,6 +3,7 @@
         "bopin{}{}":"bopin{${1:zhuyin}}{${2:pinyin}}",
         "boxpinyin{}":"boxpinyin{${1:pinyin}}",
         "boxzhuyin{}":"boxzhuyin{${1:zhuyin}}",
+        "charcode{}":"charcode{${1:code}}",
         "content{}{}":"content{${1}}{${2}}",
         "includecharacter[]{}":"includecharacter[${1:options}]{${2:name}}",
         "includecharacter{}":"includecharacter{${1:name}}",
