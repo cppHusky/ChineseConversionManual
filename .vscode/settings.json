@@ -75,5 +75,5 @@
     ],
     "latex-workshop.view.pdf.trim": 1,
     "latex-workshop.view.pdf.zoom": "page-width",
-    "editor.lineNumbers": "on",
+    "vim.vimrc.enable": true,
 }
