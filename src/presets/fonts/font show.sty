@@ -1,7 +1,8 @@
-\NewDocumentCommand{\fontshow}{O{2pt}mmO{0pt}}{
+\NewDocumentCommand{\fontshow}{O{2pt}mO{2pt}m}{
 	\raggedright\normalsize
+	\vspace{#1}
 	\ifbool{TraditionalChineseQ}{\twsans #2}{\zhsans #2}{\DejaVuSans ▼}\\
-	\centering\fontsize{30pt}{0}\vspace{#1}
-	\ifbool{TraditionalChineseQ}{#3 南去經三國，東來過五湖}{#3 南去经三国，东来过五湖}\\
-	\vspace{#4}
+	\vspace{#3}
+	\centering\fontsize{30pt}{0}
+	\ifbool{TraditionalChineseQ}{#4 南去經三國，東來過五湖}{#4 南去经三国，东来过五湖}\\
 }
