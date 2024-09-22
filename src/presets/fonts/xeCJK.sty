@@ -6,21 +6,30 @@
 \newCJKfontfamily{\zhsans}{Noto Sans CJK SC}
 \newCJKfontfamily{\twsans}{Noto Sans CJK TC}
 \newCJKfontfamily{\hksans}{Noto Sans CJK HK}
-\newCJKfontfamily{\HanWangKanTan}{HanWangKanTan}
-\newCJKfontfamily{\HanWangFangSongMedium}{HanWangFangSongMedium}
-\newCJKfontfamily{\FZFangSongZ02S}{FZFangSong-Z02S}
-\newCJKfontfamily{\TWSung}{TW-Sung}
-\newCJKfontfamily{\FZShuSongZ01S}{FZShuSong-Z01S}
-\newCJKfontfamily{\GenRyuMinTWTTF}{GenRyuMin TW TTF}
-\newCJKfontfamily{\FZHeiB01S}{FZHei-B01S}
-\newCJKfontfamily{\HanWangHeiHeavy}{HanWangHeiHeavy}
-\newCJKfontfamily{\HanWangYenHeavy}{HanWangYenHeavy}
-\newCJKfontfamily{\NotoSansCJKTCThin}{Noto Sans CJK TC Thin}
-\newCJKfontfamily{\NotoSansCJKTCLight}{Noto Sans CJK TC Light}
-\newCJKfontfamily{\NotoSansCJKTCDemiLight}{Noto Sans CJK TC DemiLight}
-\newCJKfontfamily{\NotoSansCJKTCBold}{Noto Sans CJK TC}
-\newCJKfontfamily{\NotoSansCJKTCMedium}{Noto Sans CJK TC Medium}
-\newCJKfontfamily{\NotoSansCJKTCBlack}{Noto Sans CJK TC Black}
+\setCJKfallbackfamilyfont{\CJKrmdefault}{
+	{FSung-1},
+	{FSung-2},
+	{FSung-3},
+	{FSung-F},
+	{FSung-X},
+	{FSung-p},
+	{missing-characters},
+}
+
+%勘亭流
+\newCJKfontfamily{\HanWangKanTan}{HanWangKanTan}%王漢宗勘亭流繁
+
+%康熙字典體
+\newCJKfontfamily{\KangXiZiDian}{KangXiZiDian.com Common Version}%康熙字典體
+
+%仿宋體
+\newCJKfontfamily{\HanWangFangSongMedium}{HanWangFangSongMedium}%王漢宗中仿宋繁
+\newCJKfontfamily{\FZFangSongZ02S}{FZFangSong-Z02S}%方正仿宋簡體
+\newCJKfontfamily{\FZShuSongZ01S}{FZShuSong-Z01S}%方正書宋簡體
+
+%明體
+\newCJKfontfamily{\TWSung}{TW-Sung}%全字庫正宋體
+\newCJKfontfamily{\GenRyuMinTWTTF}{GenRyuMin TW TTF}%源流明體
 \newCJKfontfamily{\NotoSerifCJKTCExtraLight}{Noto Serif CJK TC ExtraLight}
 \newCJKfontfamily{\NotoSerifCJKTCLight}{Noto Serif CJK TC Light}
 \newCJKfontfamily{\NotoSerifCJKTC}{Noto Serif CJK TC}
@@ -28,12 +37,19 @@
 \newCJKfontfamily{\NotoSerifCJKTCSemiBold}{Noto Serif CJK TC SemiBold}
 \newCJKfontfamily{\NotoSerifCJKTCBold}{Noto Serif CJK TC Bold}
 \newCJKfontfamily{\NotoSerifCJKTCBlack}{Noto Serif CJK TC Black}
-\setCJKfallbackfamilyfont{\CJKrmdefault}{
-    {FSung-1},
-    {FSung-2},
-    {FSung-3},
-    {FSung-F},
-    {FSung-X},
-    {FSung-p},
-    {missing-characters},
-}
+
+%黑體
+\newCJKfontfamily{\FZHeiB01S}{FZHei-B01S}%方正黑體簡體
+\newCJKfontfamily{\HanWangHeiHeavy}{HanWangHeiHeavy}%王漢宗特黑體繁
+\newCJKfontfamily{\NotoSansCJKTCThin}{Noto Sans CJK TC Thin}
+\newCJKfontfamily{\NotoSansCJKTCLight}{Noto Sans CJK TC Light}
+\newCJKfontfamily{\NotoSansCJKTCDemiLight}{Noto Sans CJK TC DemiLight}
+\newCJKfontfamily{\NotoSansCJKTCBold}{Noto Sans CJK TC}
+\newCJKfontfamily{\NotoSansCJKTCMedium}{Noto Sans CJK TC Medium}
+\newCJKfontfamily{\NotoSansCJKTCBlack}{Noto Sans CJK TC Black}
+
+%圓體
+\newCJKfontfamily{\HanWangYenHeavy}{HanWangYenHeavy}%王漢宗特圓體繁
+\newCJKfontfamily{\HanWangLiSuMedium}{HanWangLiSuMedium}%王漢宗中隸書繁
+\newCJKfontfamily{\NowarRoundedTW}{Nowar Rounded TW}%有愛圓體 TW
+\newCJKfontfamily{\NowarRoundedCN}{Nowar Rounded CN}%有愛圓體 CN
