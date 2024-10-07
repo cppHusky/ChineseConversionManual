@@ -14,7 +14,7 @@
         opacityframe=0,
         opacityback=0,
         opacityfill=0,
-    ]{
+    ]{%
 		\tcbox[
 			notitle,
 			nobeforeafter,
@@ -33,8 +33,7 @@
 			valign=center,
 			rightrule=0pt,
 			tcbox raise=0pt,
-            right skip=-.134em,
-		]{\sffamily\color{white}#1}
+		]{\sffamily\color{white}#1}%
 		\tcbox[
 			notitle,
 			nobeforeafter,
@@ -53,12 +52,11 @@
 			valign=center,
             leftrule=0pt,
             tcbox raise=0pt,
-            left skip=-.134em,
-		]{\sffamily\color{black}#2}
+		]{\sffamily\color{black}#2}%
     }
 }
 \NewDocumentCommand{\inlinelinkinfo}{mm}{
-    \href{#1}{
+    \href{#1}{%
         \tcbox[
             notitle,
             nobeforeafter,
@@ -74,7 +72,7 @@
             opacityframe=0,
             opacityback=0,
             opacityfill=0,
-        ]{
+        ]{%
             \tcbox[
                 notitle,
                 nobeforeafter,
@@ -93,8 +91,7 @@
                 valign=center,
                 rightrule=0pt,
                 tcbox raise=0pt,
-                right skip=-.134em,
-            ]{\sffamily\color{white}LINK}
+            ]{\sffamily\color{white}LINK}%
             \tcbox[
                 notitle,
                 nobeforeafter,
@@ -113,8 +110,7 @@
                 valign=center,
                 leftrule=0pt,
                 tcbox raise=0pt,
-                left skip=-.134em,
-            ]{\sffamily\color{blue}#2}
-        }
+            ]{\sffamily\color{blue}#2}%
+        }%
     }
 }

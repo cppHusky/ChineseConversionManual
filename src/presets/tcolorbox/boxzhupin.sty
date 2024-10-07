@@ -50,7 +50,7 @@
         opacityframe=0,
         opacityback=0,
         opacityfill=0,
-    ]{
+    ]{%
 		\tcbox[
 			notitle,
 			nobeforeafter,
@@ -69,8 +69,7 @@
 			valign=center,
 			rightrule=0pt,
 			tcbox raise=0pt,
-            right skip=-.134em,
-		]{#1}
+		]{#1}%
 		\tcbox[
 			notitle,
 			nobeforeafter,
@@ -89,7 +88,6 @@
 			valign=center,
             leftrule=0pt,
             tcbox raise=0pt,
-            left skip=-.134em,
-		]{#2}
+		]{#2}%
     }
 }
